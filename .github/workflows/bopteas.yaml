@@ -25,9 +25,9 @@ jobs:
         shell: bash
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          VULNERS_API_KEY: ${{ secrets.VULNERS_API_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          VULNERS_API_KEY: ${{ secrets.K4CG78CRDSMX1EUVIKNBT86PJG5NRIN9N4H4XV0D7G5PG3HZRQCC5A1LKB5Y668I }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.6192289115:AAGmk9dqbzDuRdneL0hLNy4OCt0XDvrj5zg }}
+          TELEGRAM_CHAT_ID: ${{ secrets.5680340412 }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
 
       - name: Create local changes
@@ -42,6 +42,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
+           github_token: ${{ secrets.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 }}
            branch: ${{ github.ref }}
 
